@@ -57,6 +57,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BluetoothHelper.cs" />
     <Compile Include="CustomButtonTargetBinding.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="MyView.cs" />

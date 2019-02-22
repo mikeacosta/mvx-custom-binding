@@ -13,6 +13,7 @@ namespace MvxCustomBinding.Droid
             base.InitializePlatformServices();
 
             Mvx.RegisterType<INotificationService>(() => new NotificationService(ApplicationContext));
+            Mvx.RegisterType<IBluetoothHelper>(() => new BluetoothHelper(ApplicationContext));
         }
 
         protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
