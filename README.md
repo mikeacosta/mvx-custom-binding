@@ -4,4 +4,4 @@
 
 ##### Simple MvvmCross custom data binding example on Android 
 
-[screen](screen.gif)
+![image](screen.gif)
