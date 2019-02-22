@@ -5,3 +5,7 @@
 ##### Simple MvvmCross custom data binding example on Android 
 
 ![image](screen.gif)
+
+##### Added example of a notification 
+
+![image](notification.gif)
