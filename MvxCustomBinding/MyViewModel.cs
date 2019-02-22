@@ -6,8 +6,11 @@ namespace MvxCustomBinding
 {
     public class MyViewModel : MvxViewModel
     {
-        public MyViewModel()
+        private readonly INotificationService _notificationService;
+
+        public MyViewModel(INotificationService notificationService)
         {
+            _notificationService = notificationService;
             MyCommand = new MvxCommand(MyCommandExecute);
         }
 
@@ -21,6 +24,11 @@ namespace MvxCustomBinding
 
         public ICommand MyCommand { get; }
 
-        private void MyCommandExecute() => MyBoolProperty = !MyBoolProperty;
+        private void MyCommandExecute()
+        {
+            MyBoolProperty = !MyBoolProperty;
+            if (MyBoolProperty)
+                _notificationService.Notify();
+        }
     }
 }
